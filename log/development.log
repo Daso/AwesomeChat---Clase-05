@@ -1,0 +1,143 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 09:51:39 -0500
+  Processing by MessagesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'messages'):
+  app/controllers/messages_controller.rb:8:in `index'
+
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (161.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (132.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMessages (20120114164221)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120114164221')[0m
+Migrating to AddStatusToMessages (20120114172251)
+  [1m[35m (0.6ms)[0m  ALTER TABLE "messages" ADD "status" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120114172251')[0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("messages")
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 09:52:49 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (21.9ms)
+Compiled application.css  (2ms)  (pid 2839)
+Compiled messages.css  (4ms)  (pid 2839)
+Compiled scaffolds.css  (18ms)  (pid 2839)
+Compiled application.js  (4ms)  (pid 2839)
+Compiled jquery.js  (18ms)  (pid 2839)
+Compiled jquery_ujs.js  (0ms)  (pid 2839)
+Compiled messages.js  (562ms)  (pid 2839)
+Completed 200 OK in 846ms (Views: 843.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-21 09:52:51 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-01-21 09:52:51 -0500
+Served asset /messages.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-21 09:52:51 -0500
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-21 09:52:51 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-21 09:52:51 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-21 09:52:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-01-21 09:52:51 -0500
+Served asset /messages.js - 304 Not Modified (4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 09:52:58 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Carlos", "content"=>"Miguel"}, "commit"=>"Create Message"}
+  [1m[35mSQL (141.4ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "Miguel"], ["created_at", Sat, 21 Jan 2012 14:52:58 UTC +00:00], ["name", "Carlos"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 14:52:58 UTC +00:00]]
+Rendered messages/create.js.erb (0.8ms)
+Completed 200 OK in 349ms (Views: 19.3ms | ActiveRecord: 141.8ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 09:55:44 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Carlos", "content"=>"Miguel sdfsdf"}, "commit"=>"Create Message"}
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Miguel sdfsdf"], ["created_at", Sat, 21 Jan 2012 14:55:44 UTC +00:00], ["name", "Carlos"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 14:55:44 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 378ms (Views: 8.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 09:55:58 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Sonia", "content"=>"Claudia"}, "commit"=>"Create Message"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "Claudia"], ["created_at", Sat, 21 Jan 2012 14:55:58 UTC +00:00], ["name", "Sonia"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 14:55:58 UTC +00:00]]
+Rendered messages/create.js.erb (0.2ms)
+Completed 200 OK in 307ms (Views: 8.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-21 10:01:55 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 10:02:02 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"er", "content"=>"as"}, "commit"=>"Enviar"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "as"], ["created_at", Sat, 21 Jan 2012 15:02:02 UTC +00:00], ["name", "er"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 15:02:02 UTC +00:00]]
+Rendered messages/create.js.erb (0.2ms)
+Completed 200 OK in 189ms (Views: 8.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 10:02:09 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"er", "content"=>"asiii"}, "commit"=>"Enviar"}
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "asiii"], ["created_at", Sat, 21 Jan 2012 15:02:09 UTC +00:00], ["name", "er"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 15:02:09 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 236ms (Views: 8.1ms | ActiveRecord: 1.4ms)
