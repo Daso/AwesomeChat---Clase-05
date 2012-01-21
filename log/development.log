@@ -141,3 +141,407 @@ Started POST "/messages" for 127.0.0.1 at 2012-01-21 10:02:09 -0500
   [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "asiii"], ["created_at", Sat, 21 Jan 2012 15:02:09 UTC +00:00], ["name", "er"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 15:02:09 UTC +00:00]]
 Rendered messages/create.js.erb (0.1ms)
 Completed 200 OK in 236ms (Views: 8.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 12:02:36 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 138ms (Views: 134.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-21 12:02:37 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-21 12:02:37 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-21 12:02:37 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-01-21 12:02:37 -0500
+Served asset /messages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-21 12:02:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-01-21 12:02:37 -0500
+Served asset /messages.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-21 12:02:37 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:02:46 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Goloso", "content"=>"A ver"}, "commit"=>"Enviar"}
+  [1m[35mSQL (10.9ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "A ver"], ["created_at", Sat, 21 Jan 2012 17:02:46 UTC +00:00], ["name", "Goloso"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:02:46 UTC +00:00]]
+Rendered messages/create.js.erb (0.7ms)
+Completed 200 OK in 878ms (Views: 19.3ms | ActiveRecord: 11.3ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:03:08 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Goloso", "content"=>"Soy yo otra vez"}, "commit"=>"Enviar"}
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Soy yo otra vez"], ["created_at", Sat, 21 Jan 2012 17:03:08 UTC +00:00], ["name", "Goloso"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:03:08 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 990ms (Views: 8.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 12:12:05 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 132ms (Views: 129.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-21 12:12:06 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-21 12:12:06 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-21 12:12:06 -0500
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-01-21 12:12:06 -0500
+Served asset /messages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-21 12:12:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-01-21 12:12:06 -0500
+Served asset /messages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-21 12:12:06 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:14:25 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Chica_Timida", "content"=>"Estamos probando este chat hola profe."}, "commit"=>"Enviar"}
+  [1m[35mSQL (11.6ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "Estamos probando este chat hola profe."], ["created_at", Sat, 21 Jan 2012 17:14:25 UTC +00:00], ["name", "Chica_Timida"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:14:25 UTC +00:00]]
+Rendered messages/create.js.erb (0.7ms)
+Completed 200 OK in 1087ms (Views: 18.8ms | ActiveRecord: 12.1ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:14:43 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Carlos", "content"=>"Grosso chat"}, "commit"=>"Enviar"}
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Grosso chat"], ["created_at", Sat, 21 Jan 2012 17:14:44 UTC +00:00], ["name", "Carlos"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:14:44 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 878ms (Views: 8.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:15:24 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Miguel Belma", "content"=>"Estamos probando"}, "commit"=>"Enviar"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "Estamos probando"], ["created_at", Sat, 21 Jan 2012 17:15:24 UTC +00:00], ["name", "Miguel Belma"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:15:24 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 537ms (Views: 8.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:20:45 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Carl", "content"=>"Ou Yeah!!"}, "commit"=>"Enviar"}
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Ou Yeah!!"], ["created_at", Sat, 21 Jan 2012 17:20:45 UTC +00:00], ["name", "Carl"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:20:45 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 736ms (Views: 8.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:22:25 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Carl", "content"=>"Ou Yeah!!"}, "commit"=>"Enviar"}
+  [1m[36mSQL (11.4ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Ou Yeah!!"], ["created_at", Sat, 21 Jan 2012 17:22:27 UTC +00:00], ["name", "Carl"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:22:27 UTC +00:00]]
+Rendered messages/create.js.erb (5.6ms)
+Completed 200 OK in 1155ms (Views: 105.1ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:22:58 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Impresionante", "content"=>"Cambios"}, "commit"=>"Enviar"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "Cambios"], ["created_at", Sat, 21 Jan 2012 17:22:58 UTC +00:00], ["name", "Impresionante"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:22:58 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 684ms (Views: 8.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:27:19 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Impresionante", "content"=>"Cambios"}, "commit"=>"Enviar"}
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Cambios"], ["created_at", Sat, 21 Jan 2012 17:27:19 UTC +00:00], ["name", "Impresionante"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:27:19 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 1415ms (Views: 8.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+  Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages" 
+Rendered messages/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+Served asset /messages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+Served asset /messages.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-21 12:27:50 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:28:14 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Carlos", "content"=>"dddd"}, "commit"=>"Enviar"}
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "dddd"], ["created_at", Sat, 21 Jan 2012 17:28:14 UTC +00:00], ["name", "Carlos"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:28:14 UTC +00:00]]
+Rendered messages/create.js.erb (0.2ms)
+Completed 200 OK in 797ms (Views: 8.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:28:25 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Carlos", "content"=>"nO!!!\r\n"}, "commit"=>"Enviar"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "nO!!!\r\n"], ["created_at", Sat, 21 Jan 2012 17:28:25 UTC +00:00], ["name", "Carlos"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:28:25 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 891ms (Views: 8.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 12:28:50 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 134ms (Views: 130.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-21 12:28:52 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-01-21 12:28:52 -0500
+Served asset /messages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-21 12:28:52 -0500
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-21 12:28:52 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-21 12:28:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-21 12:28:52 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-01-21 12:28:52 -0500
+Served asset /messages.js - 304 Not Modified (2ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:28:58 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"fff", "content"=>"fff"}, "commit"=>"Enviar"}
+  [1m[35mSQL (10.9ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "fff"], ["created_at", Sat, 21 Jan 2012 17:28:58 UTC +00:00], ["name", "fff"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:28:58 UTC +00:00]]
+Rendered messages/create.js.erb (0.8ms)
+Completed 200 OK in 865ms (Views: 20.4ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:29:19 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Miguel", "content"=>"Probando"}, "commit"=>"Enviar"}
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Probando"], ["created_at", Sat, 21 Jan 2012 17:29:19 UTC +00:00], ["name", "Miguel"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:29:19 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 1083ms (Views: 8.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2012-01-21 12:32:49 -0500
+  Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jnxhbBrP0AHdZMKFZT/kZZlOTvM1lWiw9SkLAc76tDY=", "message"=>{"name"=>"Waaf", "content"=>"Wooo"}, "commit"=>"Enviar"}
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "messages" ("content", "created_at", "name", "status", "updated_at") VALUES (?, ?, ?, ?, ?)  [["content", "Wooo"], ["created_at", Sat, 21 Jan 2012 17:32:49 UTC +00:00], ["name", "Waaf"], ["status", nil], ["updated_at", Sat, 21 Jan 2012 17:32:49 UTC +00:00]]
+Rendered messages/create.js.erb (0.1ms)
+Completed 200 OK in 904ms (Views: 8.2ms | ActiveRecord: 1.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMessages (20120114164221)
+Migrating to AddStatusToMessages (20120114172251)
+Migrating to CreateUsers (20120121174348)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120121174348')
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("messages")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 13:01:45 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.5ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (141.4ms)
+Completed 500 Internal Server Error in 205ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00000003f9a7b0>:0x00000004a02ba8>):
+    1: <% if current_user %>
+    2:   Welcome <%= current_user.name %>!
+    3:   <%= link_to "Sign Out", signout_path %>
+    4: <% else %>
+  app/views/messages/index.html.erb:1:in `_app_views_messages_index_html_erb___2122746375268675454_29866000'
+  app/controllers/messages_controller.rb:13:in `index'
+
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMessages (20120114164221)
+Migrating to AddStatusToMessages (20120114172251)
+Migrating to CreateUsers (20120121174348)
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("messages")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 13:06:56 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (137.0ms)
+Completed 500 Internal Server Error in 197ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00000003c404e8>:0x0000000218a590>):
+    1: <% if current_user %>
+    2:   Welcome <%= current_user.name %>!
+    3:   <%= link_to "Sign Out", signout_path %>
+    4: <% else %>
+  app/views/messages/index.html.erb:1:in `_app_views_messages_index_html_erb___3646413241293582661_27978520'
+  app/controllers/messages_controller.rb:13:in `index'
+
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 13:07:02 -0500
+  Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.4ms)[0m  SELECT "messages".* FROM "messages" 
+Rendered messages/index.html.erb within layouts/application (94.9ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x0000000379cdd8>:0x0000000406b928>):
+    1: <% if current_user %>
+    2:   Welcome <%= current_user.name %>!
+    3:   <%= link_to "Sign Out", signout_path %>
+    4: <% else %>
+  app/views/messages/index.html.erb:1:in `_app_views_messages_index_html_erb___3646413241293582661_27978520'
+  app/controllers/messages_controller.rb:13:in `index'
+
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 13:07:05 -0500
+  Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+Rendered messages/index.html.erb within layouts/application (54.7ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00000003f926f0>:0x000000038e0708>):
+    1: <% if current_user %>
+    2:   Welcome <%= current_user.name %>!
+    3:   <%= link_to "Sign Out", signout_path %>
+    4: <% else %>
+  app/views/messages/index.html.erb:1:in `_app_views_messages_index_html_erb___3646413241293582661_27978520'
+  app/controllers/messages_controller.rb:13:in `index'
+
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+  Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.4ms)[0m  SELECT "messages".* FROM "messages" 
+Rendered messages/index.html.erb within layouts/application (14.7ms)
+Compiled application.css  (2ms)  (pid 3912)
+Compiled sessions.css  (2ms)  (pid 3912)
+Compiled application.js  (5ms)  (pid 3912)
+Compiled sessions.js  (162ms)  (pid 3912)
+Completed 200 OK in 289ms (Views: 285.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /sessions.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /messages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /messages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-21 13:11:39 -0500
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-01-21 13:11:44 -0500
+
+OAuth::Unauthorized (401 Unauthorized):
+  
+
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (42.9ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/a05/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.3ms)

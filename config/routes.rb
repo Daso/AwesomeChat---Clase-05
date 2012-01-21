@@ -2,7 +2,8 @@ AwesomeChat::Application.routes.draw do
 
   resources :messages
 
-
+ match "/auth/:provider/callback" => "sessions#create"
+ match "/signout" => "sessions#destroy", :as => :signout
  match "/messages/:from" => "messages#index"
   root :to =>  "messages#index"
 
